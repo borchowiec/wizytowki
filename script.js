@@ -115,6 +115,7 @@ function download(event) {
 window.onload = function () {
   document.getElementById("canvasContainer").append(canvas);
   repaint();
+  setInterval(repaint, 200);
 };
 
 //set listeners to all inputs
