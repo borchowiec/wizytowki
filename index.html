@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="PL">
+
+<head>
+  <meta charset="utf-8">
+  <title>Wizytówki</title>
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="container">
+    <div id="canvasContainer"></div>
+
+    <form>
+      <label>
+        PL<input type="radio" name="language" id="polishRadio" checked>
+      </label>
+      <label>
+        EN<input type="radio" name="language" id="englishRadio">
+      </label>
+      <br/>
+
+      <div class="spacer"></div>
+
+      <input type="text" id="name" value="Jan Kowalski" placeholder="Imię i nazwisko"/>
+      <br/>
+      <input type="text" id="desc" value="Opis albo numer telefonu" placeholder="opis"/>
+      <br/>
+
+      <div class="spacer"></div>
+
+      <label for="facebookCheckbox">Facebook</label>
+      <input type="checkbox" id="facebookCheckbox" class="option" checked/>
+      <input type="text" id="facebookValue" value="facebook.com/pkcosmopk" placeholder="Facebook"/>
+      <br/>
+
+      <label for="facebookCheckbox">Twitter</label>
+      <input type="checkbox" id="twitterCheckbox" class="option" checked/>
+      <input type="text" id="twitterValue" value="twitter.com/pkcosmopk" placeholder="Twitter"/>
+      <br/>
+
+      <label for="mailCheckbox">Mail</label>
+      <input type="checkbox" id="mailCheckbox" class="option" checked/>
+      <input type="text" id="mailValue" value="cosmopk.sm@gmail.com" placeholder="Mail"/>
+      <br/>
+
+      <label for="phoneCheckbox">Telefon</label>
+      <input type="checkbox" id="phoneCheckbox" class="option" checked/>
+      <input type="text" id="phoneValue" value="+48 123 123 123" placeholder="Telefon"/>
+      <br/>
+
+      <label for="instagramCheckbox">Instagram</label>
+      <input type="checkbox" id="instagramCheckbox" class="option"/>
+      <input type="text" id="instagramValue" value="instagram.com/pkcosmopk" placeholder="Instagram"/>
+      <br/>
+
+      <div class="spacer"></div>
+
+      <label for="nameFont">Czionka imienia i nazwiska </label>
+      <input type="number" value="86" id="nameFont" min="1" max="100">
+      <br/>
+
+      <label for="nameFont">Odstęp między social mediami </label>
+      <input type="number" value="30" id="socialMargin" min="0" max="50">
+      <br/>
+    </form>
+
+    <div class="spacer"></div>
+
+    <button id="download">Pobierz</button>
+  </div>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
