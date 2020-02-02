@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('font/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('font/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('font/Roboto-Light.ttf') format('truetype');
+}
+
 body {
     margin: 0;
     padding: 0;

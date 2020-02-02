@@ -52,7 +52,6 @@ const nameFontSpinner = document.getElementById("nameFont");
 const socialMarginSpinner = document.getElementById("socialMargin");
 
 function repaint(event) {
-
   let context = canvas.getContext("2d");
   if (polishRadio.checked) {
     context.drawImage(cardImgPl, 0, 0);
@@ -74,7 +73,7 @@ function repaint(event) {
     * rectangleMargin)) / 2.0;
 
   context.fillStyle = "#636262";
-  context.font = "40px Roboto";
+  context.font = "40px RobotoMedium";
 
   for (let i = 0; i < socialsNumber; i++) {
     const y = socialsContainerY + (rectangleMargin + heightOfRectangle) * i;
@@ -89,18 +88,18 @@ function repaint(event) {
   if (descInput.value.length > 0) {
     // name
     context.fillStyle = "white";
-    context.font = "bold " + nameFontSpinner.value + "px Roboto";
+    context.font = nameFontSpinner.value + "px RobotoBold";
     context.fillText(nameInput.value, 47,  784);
 
     // desc
     context.fillStyle = "white";
-    context.font = "lighter 34px Roboto";
+    context.font = "34px RobotoLight";
     context.fillText(descInput.value, 47,  848);
   }
   else {
     // name
     context.fillStyle = "white";
-    context.font = "bold 86px Roboto";
+    context.font = "86px RobotoBold";
     context.fillText(nameInput.value, 47,  815);
   }
 }
